@@ -1,0 +1,123 @@
+/*-------body--------*/
+
+body {
+    font-size: 16px;
+    color: #212529;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 950px;
+    margin: auto;
+}
+
+/*-------header--------*/
+
+header {    
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+header h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.pic {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+section p {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/*-------main-------*/
+/* phone or baseline views **************************/
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+main section h2 {
+    color: rgb(5, 196, 123);
+    text-align: left;
+    font-size: 2.1em;   
+}
+
+main section {
+    margin: 0.5rem;
+	border: 1px solid #bbb;
+	padding: 0 1rem;
+    background-color: #eee;    
+    box-shadow: 0 0 5px #777;
+}
+
+main section:nth-child(2) {
+    margin: 0.5rem;    
+    box-shadow: 0 0 5px #777;
+}
+
+main section:nth-child(3) {
+    margin: 0.5rem;    
+    box-shadow: 0 0 5px #777;
+}
+
+main a:link {
+    text-decoration: none;
+    color: rgb(247, 102, 6);
+}
+
+main a:visited {
+    color: rgb(156, 6, 6);
+}
+
+/*---------------------------------footer--------------------------------*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.85rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+footer a:link {
+    color: rgb(236, 115, 176);
+    text-decoration: none;
+}
+
