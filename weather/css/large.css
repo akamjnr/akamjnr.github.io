@@ -1,0 +1,103 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 65em) {
+
+    /* Header */
+
+    header img {
+        width: auto;
+        height: 140px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+    }
+
+    .motto {
+        font-size: 1.5rem;
+    }
+
+
+    /* Navigation */
+    nav {
+        max-width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+        max-width: 950px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navigation a {
+        display: block;
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav a:hover {
+        height: auto;
+    }
+
+    button {
+        display: none;
+    }
+
+    /*  Main  */
+    main {
+        display: block;
+        font-size: 15.3px;
+        padding: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    .contact {
+        max-width: 950px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+
+    .map {
+        display: grid;
+        grid-column: 1;
+        grid-row: 1;
+        height: 250px;
+        width: auto;
+        padding: 0;
+        margin: 10px 0 0 250px;
+    }
+
+    .contact-details {
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #212529;
+        color: #6d7e97;
+        text-align: center;
+        font-size: 0.80rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 15px;
+    }
+
+    footer a:link {
+        color: rgb(14, 171, 243);
+        text-decoration: none;
+    }
+
+}

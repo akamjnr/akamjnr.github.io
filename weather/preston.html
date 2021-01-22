@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Preston">
+        <meta name="author" content="Anyway Kambeva">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css"> 
+
+        <title>Idaho Weather Forecast: Preston</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>     
+
+        <header>
+            <picture>
+                <img src="images/iwf-logo.png" alt="IWF logo">
+            </picture>
+
+            <div class="logo-name">
+                <h1>Idaho Weather Forecast</h1>
+                <div class="motto">Acurate - Reliable - Always</div>
+            </div>
+        </header>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#x2630;Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston.html" class="active">Preston Idaho</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+            </nav>
+
+            <main>                
+                    <h2>Preston Idaho</h2>
+                <div>
+
+                    <img class="placeholder-image" src="images/placeholder.jpg" alt="placeholder">
+                    
+                        <h3>Weather Summary</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. </p>
+                    
+                </div>
+
+                <div>
+                    <h3>Five Day Forecast</h3>
+
+                    <div class="forecast">
+
+                        <div>
+                            <p>Mon</p>
+                            <img class="weather-icon" src='images/iwf-logo.png' alt="weather-image">
+                            <p>78&deg;F</p>
+                        </div>
+
+                        <div>
+                            <p>Tue</p>
+                            <img class="weather-icon" src='images/iwf-logo.png' alt="weather-image">
+                            <p>79&deg;F</p>
+                        </div>
+
+                        <div>
+                            <p>Wed</p>
+                            <img class="weather-icon" src='images/iwf-logo.png' alt="weather-image">
+                            <p>80&deg;F</p>
+                        </div>
+
+                        <div>
+                            <p>Thu</p>
+                            <img class="weather-icon" src='images/iwf-logo.png' alt="weather-image">
+                            <p>81&deg;F</p>
+                        </div>
+
+                        <div>
+                            <p>Fri</p>
+                            <img class="weather-icon" src='images/iwf-logo.png' alt="weather-image">
+                            <p>82&deg;F</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div> 
+                    <h3>Article</h3>
+
+                    <div class="article">                   
+                        <div>                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                 Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                mollit anim id est laborum.
+                            </p>                            
+                        </div>
+
+                        <div>
+                            <img class="article-img" src='images/article-image.jpg' alt="article-image">
+                        </div>
+                    </div>
+                    
+                </div> 
+                
+            </main>
+
+            <div class="contact-info">
+                <div class="contact">                
+                        <img class="map" src="images/preston-map.JPG" alt="preston map">
+                    
+                  
+                    <div class="contact-details">  
+                        <h3>Contact Information</h3>                          
+                        <p>&#128233; hello@iwf.com</p>  
+                        <p>&#128224; 1233 444 555 777</p>                           
+                    </div>
+                    
+                </div>
+                    
+            </div>
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> | Anyway Kambeva | Cape Town | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br><span id="currentday"></span></p>
+            </footer>
+
+            <script src="js/preston.js"></script>
+        
+    </body>
+
+</html>
