@@ -1,7 +1,7 @@
 /* Desktop Views ****************************/
 @media only screen and (min-width: 65em) {
 
-    /* Header */
+    /* -------------------------------- HEADER ----------------------------- */
 
     header img {
         width: auto;
@@ -16,11 +16,12 @@
     }
 
     .motto {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-top: 15px;
     }
 
+    /* --------------------  NAVIGATION ------------------ */
 
-    /* Navigation */
     nav {
         max-width: 100%;
     }
@@ -51,41 +52,80 @@
         display: none;
     }
 
-    /*  Main  */
-    main {
-        display: block;
-        font-size: 15.3px;
-        padding: 20px;
-        font-family: 'Open Sans', sans-serif;
+    h3 {
+        font-size: 1.5rem;
     }
 
+    /* ---------------------------- MAIN -----------------------------  */
 
-    .contact {
-        max-width: 950px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
+    .preston-idaho {
+        font-size: 2.15rem;
     }
 
+    /* ------------------------------- WEATHER SUMMARY  -------------------- */
 
-    .map {
-        display: grid;
-        grid-column: 1;
-        grid-row: 1;
-        height: 250px;
-        width: auto;
+    .first-part {
         padding: 0;
-        margin: 10px 0 0 250px;
     }
 
-    .contact-details {
-        display: grid;
-        grid-column: 2;
-        grid-row: 1;
+    .weather-summary {
+        padding: 1.5rem;
     }
 
-    /* Footer */
+    .weather-summary h3 {
+        font-size: 1.2em;
+    }
+
+    .ws-content {
+        font-size: 1em;
+    }
+
+    .ws-content div {
+        line-height: 1.75rem;
+    }
+
+
+    /* --------------------  5 DAY FORECAST  ------------------ */
+
+    .second-part {
+        margin: 2rem 0;
+    }
+
+    .forecast img {
+        max-width: 70px;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* --------------------------  ARTICLE  ------------------------ */
+    .third-part {
+        margin: 10px 0;
+        padding: 3rem;
+        line-height: 1.5rem;
+    }
+
+    .third-part p {
+        padding-right: 20px;
+    }
+
+    .article-img {
+        float: right;
+        margin: 0 0 0 1rem;
+        width: 55%;
+    }
+
+    /*-------------------------------------- CONTACT INFORMATION -------------- --*/
+
+    address {
+        font-size: 1em;
+        padding-right: 70px;
+    }
+
+    address a {
+        font-size: 0.7em;
+    }
+
+    /* -------------------------------- FOOTER ----------------------------- */
     footer {
         background-color: #212529;
         color: #6d7e97;

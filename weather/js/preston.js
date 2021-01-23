@@ -9,4 +9,13 @@ function toggleMenu() {
 }
 
 
+// Hide the banner, unless it's Fridays
+function showBanner() {
+    if (weekday == 'Friday') {
+      document
+        .getElementsByClassName("show-banner")[0]
+        .classList.toggle("hide-banner");
+    }
+  }
+
 

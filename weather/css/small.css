@@ -1,11 +1,28 @@
-/* Body */
+/* -------------------------------- BODY ----------------------------- */
 body {
     background-color: rgb(238, 238, 238);
-    margin: 0;
-    padding: 0;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4rem;    
+    color: #212529;
 }
 
-/* Header */
+.show-banner {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    height: auto;
+    background-color: rgb(253, 101, 63);
+    color: #fff;
+    padding: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hide-banner {
+    display: none;
+}
+
+/* ----------------------------- HEADER ---------------------------- */
 header {
     color: white;
     display: flex;
@@ -36,12 +53,12 @@ header img {
 .motto {
     font-style: normal;
     letter-spacing: 1pt;
-    color: #007ADB;
+    color: #4cacfa;
     font-size: 0.9rem;
 }
 
 
-/* Navigation */
+/* -------------------------------- NAVIGATION ------------------------------- */
 nav {
     background-color: #007abd;
     text-align: center;
@@ -87,117 +104,219 @@ nav {
     display: block;
 }
 
-/*  Main  */
-main {
-    display: block;
-
-}
-
+/* ---------------------------- MAIN -----------------------------  */
 main {
     max-width: 950px;
-    margin: 0px auto;
-    color: #212529;
-    font-size: 15px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 20px;
-    background-color: rgb(238, 238, 238);
-    box-sizing: border-box;
-    text-align: left;
+    margin: auto;    
+    padding-top: 1rem;
 }
 
-.placeholder-image {
+.preston-idaho {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+/*-------------------------------------- WEATHER SUMMARY -------------- --*/
+
+.first-part {
+    position: relative;
+    margin: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 120%;
+    margin-left: -3rem;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    background-color: rgba(244, 230, 205, 0.356);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.weather-summary h3 {
+    font-size: 1em;
+    margin: 0;
+    color: grey;
+}
+
+.ws-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 0 0.5rem;
+    margin: 0;
+    border-top: .5px solid rgba(243, 236, 236, 0.082);
+    font-size: 0.7em;
+    color: rgba(83, 81, 81, 0.719);
+}
+
+.ws-content div {
+    margin: 0;
+    line-height: 1.1rem;
+}
+
+.col-1 {
+    display: grid;
+    justify-items: end;
+}
+
+/*  ---------------------------- 5 DAY FORECAST ------------------ */
+
+.second-part {
+    display: none;
     max-width: 100%;
-    height: auto;
-    padding: 10px;
-    top: 10px;
-    left: 10px;
-    border-radius: 15px;
-
+    margin: 20px;
 }
 
-main h2 {
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 10px;
-}
-
-main h3 {
-    font-size: 1.37rem;
-}
-
-main h3,
-main p {
-    padding-left: 10px;
-    padding-right: 10px;
+.second-part h3 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 3%;
 }
 
 .forecast {
-    display: flex;
-    flex-flow: wrap;
+    max-width: 100%;
     margin: 0 auto;
-    max-width: 950px;
-    justify-content: space-evenly;
-}
-
-.weather-icon {
-    width: auto;
-    height: 85px;
-}
-
-.article {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 10px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: rgb(238, 238, 238);
+}
+
+.forecast-icon {
+    max-width: 70px;
+    height: auto;
+    padding: 10px;
+}
+
+.forecast div {
+    display: grid;
+    max-width: 100%;
+    justify-items: center;
+}
+
+.forecast-day {
+    font-weight: bold;
+    padding: 0.2rem;
+    color: white;
+    background-color: rgb(143, 142, 142);
+}
+
+.forecast-temp {
+    padding-bottom: 0.3rem;
+}
+
+
+/*-------------------------------------- HR TAG -------------- --*/
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*  ---------------------------- ARTICLE ------------------ */
+
+.third-part {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    line-height: 1.4rem;
 }
 
 .article-img {
+    display: block;
+    margin: auto;
     width: 100%;
-    height: auto;
-    padding: 10px;
-    top: 10px;
-    left: 10px;
-    border-radius: 15px;
-    object-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
-.article p {
-    display: grid;
-    grid-column: span 1;
-    grid-row: span 2;
-    line-height: 1.5rem;
+.article-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
-.contact-info {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0 auto;
-    max-width: 100%;
-    background-color: #373c42;
-    color: #fff;
+.article-author {
+    font-style: italic;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.6);
 }
 
-.contact {
-    padding: 20px 40px 40px;
-    max-width: 950px;
-    display: flex;   
-    flex-flow: wrap; 
+/*-------------------------------------- CONTACT INFORMATION -------------- --*/
+
+.fourth-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0;
+}
+
+.contact-img {
+    display: none;
+    margin: 1em;
+    width: 45%;
+    justify-content: center;
     align-items: center;
 }
 
-.map {
-    display: block;
-    margin: 20px 30px 20px 0;
+.contact-img img {
     width: 100%;
-    height: auto;
+    border-radius: 5px;
 }
 
-.contact-details {
-    display: grid;
-    grid-column: 2;
-    grid-row: 1;
-    margin: 0 0 0 20px;
+.contact-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-/*  Footer  */
+address {
+    font-style: normal;
+}
+
+address a {
+    color: #fff;
+    font-size: 0.5em;
+}
+
+.fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+/*------------------------------  Footer ------------------------------------- */
 
 footer {
     background-color: #212529;

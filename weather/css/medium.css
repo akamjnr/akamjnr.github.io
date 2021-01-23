@@ -1,7 +1,7 @@
 /* Tablet Views ******************************/
 @media only screen and (min-width: 40em) {
 
-    /* Header */
+    /* -------------------------------- HEADER ----------------------------- */
     header {
         display: flex;
         align-items: center;
@@ -22,25 +22,25 @@
     }
 
     .motto {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-top: 10px;
     }
 
+    /*------------------------------ NAVIGATION ---------------------- */
 
-    /* Navigation */
-    
     nav {
         max-width: 100%;
     }
 
     .navigation {
-		display: flex;
+        display: flex;
     }
-    
-	.navigation li {
-		display: block;
-		flex: 1 1 auto;
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
     }
-    
+
     .navigation a {
         display: block;
         max-width: 760px;
@@ -48,9 +48,9 @@
         text-align: center;
     }
 
-	.navigation li:first-child {
-		display: none;
-	}    
+    .navigation li:first-child {
+        display: none;
+    }
 
     nav a:hover {
         height: auto;
@@ -60,38 +60,91 @@
         display: none;
     }
 
+    /* ---------------------------- MAIN -----------------------------  */
+    h3 {
+        font-size: 1.3rem;
+    }
 
-    main h2 {
+    .preston-idaho {
         font-size: 2rem;
+    }
+
+    /* ------------------------------- WEATHER SUMMARY  -------------------- */
+
+    .hero-image img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .weather-summary {
+        padding: 1.25rem;
+    }
+
+    .weather-summary h3 {
+        font-size: 1.25em;
+    }
+
+    .ws-content {
+        font-size: 1em;
+    }
+
+    .ws-content div {
+        line-height: 1.5rem;
+    }
+
+    /* ------------------------------- 5 DAY FORECAST -------------------- */
+
+    .second-part {
+        display: block;
+        max-width: 100%;
+    }
+
+    .forecast img {
+        max-width: 50px;
+        height: auto;
         padding: 10px;
-        margin: 10px;
     }
 
-    .weather-icon {
+    /* ------------------ ARTICLE ---------------------- */
+
+    .third-part {
+        max-width: 100%;
+        padding: 2rem;
+        line-height: 1.5rem;
+    }
+
+    .article-img {
+        float: right;
+        margin: 0 0 0 1rem;
+        width: 50%;
+    }
+
+    .article-title {
+        margin-top: 0;
+    }
+
+
+    /*-------------------------------------- CONTACT INFORMATION -------------- --*/
+
+    .contact-img {
+        display: flex;
+        padding-right: 20px;
+    }
+
+    .contact-box {
         width: auto;
-        height: 100px;
     }
 
-    .contact {
-        max-width: 760px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
+    address {
+        font-size: 1em;
+        padding-right: 55px;
     }
 
-    .map {
-        display: grid;
-        grid-column: 1;
-        grid-row: 1;
-        height: 250px;
-        width: auto;
-        padding: 0;
-        margin: 10px 0 10px auto;
+    address a {
+        font-size: 0.7em;
     }
-    
 
-    /* Footer */
+    /* -------------------------------- FOOTER ----------------------------- */
 
     footer {
         background-color: #212529;
