@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="WDD-230 Web Frontend Development I. Progressive Loading of Images / Lazy Loading">
+        <meta name="article-author" content="Anyway Kambeva">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/lazy-loading.css">
+        <title>Progressive Loading of Images</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>            
+            <h1>Progressive Loading of Images</h1>                       
+        </header>
+
+<!-- MAIN  -->
+
+        <main> 
+
+            <picture>
+                <img src="images/placeholder.jpeg" data-src="images/grass-flowers.jpg" alt="beautiful grass flowers">
+                <figcaption>Kukurukura hunge wapotswa</figcaption>
+            </picture>
+            
+            <picture>
+                <img src="images/placeholder.jpeg" data-src="images/barley-field.jpg" alt="beautiful sunset over barley field">
+                <figcaption>Kukurukura hunge wapotswa</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.jpeg" data-src="images/beautiful-flowers.jpg" alt=" flowers in wheat field">
+                <figcaption>Kukurukura hunge wapotswa</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.jpeg" data-src="images/flower.jpg" alt="beautiful red flower">
+                <figcaption>Kukurukura hunge wapotswa</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.jpeg" data-src="images/poppies.jpg" alt="beautiful poppies">
+                <figcaption>Kukurukura hunge wapotswa</figcaption>
+            </picture>
+
+            <picture>
+                <img src="images/placeholder.jpeg" data-src="images/tulips.jpg" alt="beautiful tulips">
+                <figcaption>Kukurukura hunge wapotswa</figcaption>
+            </picture> 
+            
+        </main>
+
+<!-- FOOTER -->
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> Idaho Weather Forecast | Anyway Kambeva | Attributions | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br><span id="currentday"></span></p>
+            </footer>
+
+            <script src="js/lazy-loading.js"></script>
+        
+    </body>
+
+</html>
