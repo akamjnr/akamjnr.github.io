@@ -18,7 +18,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
 
-    <body onload="showBanner()">
+    <body onload="showBanner(); calculateWindChill()">
         <aside class="show-banner hide-banner">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
         </aside>   
         
@@ -57,9 +57,12 @@
 
                     <div class="first-part">
 
-                        <div class="hero-image">
-                          <img src="images/placeholder.jpg" alt="beautiful flowers">
-                        </div>
+                        <picture class="hero-image">
+                            <source media="(max-width: 530px)" srcset="images/hero-small.jpg">
+                            <source media="(max-width: 930px)" srcset="images/hero-medium.jpg">
+                            <source media="(min-width: 1000px)" srcset="images/hero-large.jpg">
+                            <img src="images/hero-pic.jpg" alt="sun shining through clouds">
+                        </picture>
 
                         <section class="weather-summary">
 
@@ -67,15 +70,15 @@
                           <div class="ws-content">
 
                             <div class="col-1">Currently:</div>
-                            <div>Sunny</div>
+                            <div>Rainy</div>
                             <div class="col-1">High:</div>
-                            <div>76 &deg;F</div>
+                            <div><span id="currenttemp">48</span>&deg;F</div>
                             <div class="col-1">Wind Chill:</div>
-                            <div>35&deg;F</div>
+                            <div id=windchilllabel><span id="windchill"></span>&deg;F</div>
                             <div class="col-1">Humidity:</div>
-                            <div>69%</div>
+                            <div>90%</div>
                             <div class="col-1">Wind Speed:</div>
-                            <div>5 mph</div>
+                            <div><span id="windspeed">12</span>mph</div>
 
                           </div>
 
@@ -185,6 +188,7 @@
             </footer>
 
             <script src="js/preston.js"></script>
+            <script src="js/windchill.js"></script>
         
     </body>
 
