@@ -52,15 +52,6 @@ picture img[data-src] {
     filter: blur(0.2em);
 }
 
-picture figcaption {
-    display: grid;
-    padding-top: .8rem;
-    text-align: center;
-    padding-left: 15px;
-    align-items: center;
-    max-width: 270px;
-}
-
 #updated {
     color: rgb(208, 206, 186);
 }
