@@ -11,6 +11,6 @@ function calculateWindChill() {
     document.getElementById("windchill").innerHTML = windChill;
   }
   else {
-    document.getElementById("windchilllabel").innerHTML = "N/A";
+    document.getElementById("windchill-lab").innerHTML = "N/A";
   }
 }
