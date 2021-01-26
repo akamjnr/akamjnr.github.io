@@ -1,0 +1,249 @@
+/* -------------------------------- BODY ----------------------------- */
+body {
+    background-color: rgb(238, 238, 238);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4rem;    
+    color: #212529;
+}
+
+.show-banner {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    height: auto;
+    background-color: rgb(253, 101, 63);
+    color: #fff;
+    padding: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hide-banner {
+    display: none;
+}
+
+/* ----------------------------- HEADER ---------------------------- */
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #05315e;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.motto {
+    font-style: normal;
+    letter-spacing: 1pt;
+    color: #4cacfa;
+    font-size: 0.9rem;
+}
+
+
+/* -------------------------------- NAVIGATION ------------------------------- */
+nav {
+    background-color: #007abd;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: #fff;
+    background-color: rgb(14, 171, 243);
+}
+
+.active {
+    color: #fff;
+    background-color: rgb(14, 171, 243);
+}
+
+.responsive li {
+    display: block;
+}
+
+/* ---------------------------- MAIN / GALLERY -----------------------------  */
+main {
+    max-width: 950px;
+    margin: auto;    
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: left;
+    padding: 20px 0 0 40px;
+    margin: 0;
+}
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 2rem; 
+    margin: auto;
+  }
+  
+  figure {
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.349);
+  }
+  
+  figure img { 
+    display: grid;
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
+  figure img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  figure figcaption {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+    max-width: 270px;
+    font-size: 0.9rem;
+  }
+
+
+/*-------------------------------------- HR TAG -------------- --*/
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+/*-------------------------------------- CONTACT INFORMATION -------------- --*/
+
+.fourth-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0;
+}
+
+.contact-img {
+    display: none;
+    margin: 1em;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contact-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
+    color: #fff;
+    font-size: 0.5em;
+}
+
+.fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+/*------------------------------  Footer ------------------------------------- */
+
+footer {
+    background-color: #212529;
+    color: #6d7e97;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    line-height: 1.3rem;
+}
+
+footer a:link {
+    color: rgb(14, 171, 243);
+    text-decoration: none;
+}

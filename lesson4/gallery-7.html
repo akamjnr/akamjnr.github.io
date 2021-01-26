@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Gallery">
+        <meta name="article-author" content="Anyway Kambeva">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css"> 
+      <!-- <link rel="stylesheet" href="css/lazy-loading.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Idaho Weather Forecast: Gallery</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body onload="showBanner(); calculateWindChill()">
+        <aside class="show-banner hide-banner">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </aside>   
+        
+<!-- HEADER -->
+
+        <header>
+            <picture>
+                <img src="images/iwf-logo.png" alt="IWF logo">
+            </picture>
+
+            <div class="logo-name">
+                <h1>Idaho Weather Forecast</h1>
+                <div class="motto">Acurate - Reliable - Always</div>
+            </div>
+        </header>
+
+<!-- NAVIGATION -->
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#x2630;Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Preston Idaho</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery-7.html" class="active">Gallery</a></li>
+                </ul>
+            </nav>
+
+<!-- MAIN  -->
+
+            <main>
+                             
+                <h2 class="preston-idaho">Weather Gallery</h2>
+                
+                <div class="gallery-section">
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/landscape.jpg " alt="beautiful and calm landscape">
+                        <figcaption>Peaceful and calm weather</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/bird-flowers.jpg" alt="beautiful bird surrounded by flowers">
+                        <figcaption>Enjoying beautiful weather</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/beautiful-mountain.jpg" alt="amazing landscape with mountain in background">
+                        <figcaption>Amazing views on a clear day</figcaption>
+                    </figure>
+
+                    <figure>
+                          <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/beautiful-sunset.jpg" alt="beautiful peaceful sunset">
+                          <figcaption>What a lovely sunset</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/chapman-drive.jpg" alt="amazing drive on mountain edge">
+                        <figcaption>Perfect weather for outdoors</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/rainbow.jpg" alt="beautiful rainbow colors">
+                        <figcaption>Beautiful rainbow colors</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/cloudscape.jpg" alt="mist covering a town">
+                        <figcaption>Clouds covering a town</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/rainy-day.jpg" alt="lovely rainy weather">
+                        <figcaption>It's a rainy day</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="images/gallery/placeholder.jpeg" data-src="images/gallery/snow.jpg" alt="white pure snow">
+                        <figcaption>It's snow time</figcaption>
+                    </figure>
+
+                </div>
+
+
+<!-- HR TAG -->
+
+
+                <hr>
+
+
+<!-- CONTACT INFORMATION -->
+
+                <div class="fourth-part">
+                    <a class="contact-img" target="_blank"
+                    href="https://www.google.com/maps/@42.1032243,-111.8698475,12.92z?hl=en">
+                    <img src="images/gallery/preston-map.JPG" alt="Preston Idaho Map">
+                    </a>
+                    <div class="contact-box">
+                        <div class="contact">
+                            <address>
+                                <strong>Idaho Weather Forecast</strong><br>
+                                1122 Downtown South<br>
+                                Preston, ID 001122<br><br>&#9742;
+                                333.444.5555<br>&#9993; info@iwf.com<br><br>
+                                <a href="facebook.com" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                                <a href="twitter.com" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+                                <a href="instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+
+<!-- FOOTER -->
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> Idaho Weather Forecast | Anyway Kambeva | Attributions | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br><span id="currentday"></span></p>
+            </footer>
+
+            <script src="js/gallery.js"></script>
+        
+    </body>
+
+</html>
