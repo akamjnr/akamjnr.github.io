@@ -4,21 +4,22 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Storm Center">
+        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Home">
         <meta name="article-author" content="Anyway Kambeva">
         
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/stormcenter.css">
+        <link rel="stylesheet" href="css/small.css">
         <link rel="stylesheet" href="css/medium.css">
         <link rel="stylesheet" href="css/large.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <title>Idaho Weather Forecast: Storm Center</title>
+        <title>Idaho Weather Forecast: Home</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     </head>
 
-    <body>        
+    <body>  
+        
 <!-- HEADER -->
 
         <header>
@@ -37,27 +38,52 @@
             <nav>
                 <ul class="navigation">
                     <li><a href="#" onclick="toggleMenu()">&#x2630;Menu</a></li>
-                    <li><a href="../lesson5/index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="../lesson3/preston.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
-                    <li><a href="stormcenter.html"  class="active">Storm Center</a></li>
-                    <li><a href="gallery-7.html">Gallery</a></li>
+                    <li><a href="../lesson4/stormcenter.html">Storm Center</a></li>
+                    <li><a href="../lesson4/gallery-7.html">Gallery</a></li>
                 </ul>
             </nav>
-<!-- MAIN  -->
-            <main>                             
-                <h2 class="preston-idaho">Storm Center</h2>
-                <p class="thank-you">Thank you! Your report has been successfully submitted.</p>
-                <form method="get" action="thanks.html"></form> 
 
-<!-- HR TAG --> <hr>
+<!-- MAIN  -->
+
+            <main>                             
+                <div class="banner-img">
+                    <img src="images/sunset-home.jpg" alt="beautiful sunset">
+                  </div>
+
+                  <div class="feature">
+                    <img class="article-img" src="images/snow.jpg" alt="lots of snow">
+                    <h3 class="article-title">Winter storm dumps snow on Idaho ski resorts.</h3>
+                    <h4 class="article-author">Author: KTVB Staff</h4>
+                    <p>BOISE, Idaho — A series of winter storms this week dumped a huge helping of powder on Idaho's 
+                        ski resorts - and more is on the way. More than two feet of snow fell in some mountain 
+                        locations over the last two days and all of the ski resorts in Central and Southwest Idaho
+                         are reporting prime skiing conditions. KTVB meteorologist Rick Lantz called it "a skiers' paradise." 
+                         <a class="article-link" href="https://www.ktvb.com/article/weather/winter-storm-snow-idaho-ski-resorts-bogus-brundage-sun-valley-tamarack-soldier/277-be464271-7778-4caa-b517-c5db9f22965e" target="_blank">
+                        Read more...</a> </p>
+                  </div>
+
+                  <div class="towns">
+                    <h2>Local Towns</h2>
+                    <div class="town-data"></div>
+                  </div>
+
+
+<!-- HR TAG -->
+
+
+                <hr>
+
 
 <!-- CONTACT INFORMATION -->
+
                 <div class="fourth-part">
                     <a class="contact-img" target="_blank"
                     href="https://www.google.com/maps/@42.1032243,-111.8698475,12.92z?hl=en">
-                    <img src="images/gallery/preston-map.JPG" alt="Preston Idaho Map">
+                    <img src="images/preston-map.JPG" alt="Preston Idaho Map">
                     </a>
                     <div class="contact-box">
                         <div class="contact">
@@ -82,7 +108,7 @@
                 <p> &copy; <span id="currentyear"> </span> Idaho Weather Forecast | Anyway Kambeva | Attributions | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br><span id="currentday"></span></p>
             </footer>
 
-            <script src="js/gallery.js"></script>
+            <script src="js/home.js"></script>
         
     </body>
 
