@@ -1,7 +1,7 @@
-/* Tablet Views ******************************/
+/*---------------- Tablet Views ---------------------*/
 @media only screen and (min-width: 40em) {
 
-    /* -------------------------------- HEADER ----------------------------- */
+    /* ------- HEADER ------- */
     header {
         display: flex;
         align-items: center;
@@ -26,7 +26,7 @@
         margin-top: 10px;
     }
 
-    /*------------------------------ NAVIGATION ---------------------- */
+    /*------- NAVIGATION ------- */
 
     nav {
         max-width: 100%;
@@ -63,16 +63,16 @@
     /* ------ MAIN -------  */
 
     h2 {
-        font-size: 2.3rem;
+        font-size: 2.3rem;        
+        padding: 1rem 1.5rem 2rem .6rem;
+        margin: 1rem 0 0 .1rem;
     }
 
-    /* ------------------ ARTICLE ---------------------- */
-    
-    /*---- Home Page: Feature ----*/
+    /* ------ FEATURE ------ */
     div.feature {
-        margin: 2.5rem;
         max-width: 100%;
-        padding: 2rem 5rem 2rem 1rem;
+        margin: 2.7rem 5rem -.5rem .5rem;
+        padding: 1rem 1rem 0 1rem;
         line-height: 1.5rem;
     }
 
@@ -131,6 +131,7 @@
     div.town-data section div.town-image img {
         width: 100%;
         align-self: center;
+        border-radius: 0;
     }
 
 

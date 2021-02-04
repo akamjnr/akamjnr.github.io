@@ -58,12 +58,17 @@
     }
 
     /* ------ MAIN ------  */
+    h2 {
+        font-size: 2.5rem;        
+        padding: .1rem 1.5rem 2rem .6rem;
+        margin: 1rem 0 0 .1rem;
+    }
 
-    /* --------------------------  ARTICLE  ------------------------ */
+    /* ----- FEATURE ------- */
     div.feature {
-        margin: 2.5rem;
         max-width: 100%;
-        padding: 2rem 5rem 2rem .1rem;
+        margin: 2.7rem 5rem 3rem .5rem;
+        padding: 1rem 1rem 0 1rem;
         line-height: 1.5rem;
     }
 
@@ -103,6 +108,10 @@
 
     div.town-data section p.motto {
         height: 50px;
+    }
+
+    div.town-data section div.town-image img {
+        border-radius: 0 0 5px 5px;
     }
 
     /*---- CONTACT INFORMATION ----*/

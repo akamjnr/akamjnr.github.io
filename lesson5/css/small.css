@@ -1,4 +1,4 @@
-/* -------------------------------- BODY ----------------------------- */
+/* ------ BODY --------- */
 body {
     background-color: rgb(238, 238, 238);
     font-size: 15px;
@@ -7,7 +7,7 @@ body {
     color: #212529;
 }
 
-/* ----------------------------- HEADER ---------------------------- */
+/* --------- HEADER ----------- */
 header {
     color: white;
     display: flex;
@@ -43,7 +43,7 @@ header img {
 }
 
 
-/* -------------------------------- NAVIGATION ------------------------------- */
+/* -------- NAVIGATION ---------- */
 nav {
     background-color: #007abd;
     text-align: center;
@@ -95,27 +95,25 @@ div.banner-img img {
     margin-top: .5rem;
 }
 
-/* ---------------------------- MAIN / GALLERY -----------------------------  */
+/* -------- MAIN --------  */
 main {
     max-width: 950px;
-    margin: auto;
     padding-top: 1rem;
+    margin: auto;
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: lighter;
     text-align: left;
-    padding: 0.75rem;
-    margin: 0;
+    padding: 1rem 1.5rem 2rem .6rem;
+    margin: 1rem 0 0 .1rem;
 }
 
-/*  ---------------------------- ARTICLE ------------------ */
-
-/*** Home Page: Feature *****************************/
+/*------- FEATURE --------*/
 div.feature {
-    margin: .5rem;
-    padding: 1rem;
+    margin: .5rem .5rem -2rem .5rem;
+    padding: 1rem 1rem 0 1rem;
     max-width: 100%;
     line-height: 1.4rem;
 }
@@ -147,8 +145,9 @@ div.feature {
 }
 
 
-/*** Home Page: Local Towns *************************/
-div.towns {
+
+/*---------- Local Towns ------------*/
+div.towns {    
     margin: 0;
     padding: 0.75rem;
 }
@@ -203,6 +202,7 @@ div.town-data section div.town-image img {
     display: grid;
     align-self: end;
     width: 100%;
+    border-radius: 0 0 5px 5px;
 }
 
 /*---- HR TAG -----*/
