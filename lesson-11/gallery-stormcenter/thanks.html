@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Storm Center">
+        <meta name="article-author" content="Anyway Kambeva">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/stormcenter.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Idaho Weather Forecast: Storm Center</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>        
+<!-- HEADER -->
+
+        <header>
+            <picture>
+                <img src="images/iwf-logo.png" alt="IWF logo">
+            </picture>
+
+            <div class="logo-name">
+                <h1>Idaho Weather Forecast</h1>
+                <div class="motto">Acurate - Reliable - Always</div>
+            </div>
+        </header>
+
+<!-- NAVIGATION -->
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#x2630;Menu</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../preston.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="../stormcenter.html" class="active">Storm Center</a></li>
+                    <li><a href="../gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+<!-- MAIN  -->
+            <main>                             
+                <h2 class="preston-idaho">Storm Center</h2>
+                <p class="thank-you">Thank you! Your report has been successfully submitted.</p>
+                <form method="get" action="thanks.html"></form> 
+
+<!-- HR TAG --> <hr>
+
+<!-- CONTACT INFORMATION -->
+                <div class="fourth-part">
+                    <a class="contact-img" target="_blank"
+                    href="https://www.google.com/maps/@42.1032243,-111.8698475,12.92z?hl=en">
+                    <img src="images/gallery/preston-map.JPG" alt="Preston Idaho Map">
+                    </a>
+                    <div class="contact-box">
+                        <div class="contact">
+                            <address>
+                                <strong>Idaho Weather Forecast</strong><br>
+                                1122 Downtown South<br>
+                                Preston, ID 001122<br><br>&#9742;
+                                333.444.5555<br>&#9993; info@iwf.com<br><br>
+                                <a href="facebook.com" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                                <a href="twitter.com" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+                                <a href="instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+
+<!-- FOOTER -->
+
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> Idaho Weather Forecast | Anyway Kambeva | Attributions | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a><br><span id="currentday"></span></p>
+            </footer>
+
+            <script src="js/gallery.js"></script>
+        
+    </body>
+
+</html>
