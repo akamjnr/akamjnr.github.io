@@ -1,0 +1,358 @@
+/* -------- BODY ---------- */
+body {
+    background-color: rgb(238, 238, 238);
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4rem;    
+    color: #212529;
+}
+
+.show-banner {
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    height: auto;
+    background-color: rgb(253, 101, 63);
+    color: #fff;
+    padding: 0.9rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hide-banner {
+    display: none;
+}
+
+/* ----------- HEADER ----------- */
+header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #05315e;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+}
+
+.logo-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.motto {
+    font-style: normal;
+    letter-spacing: 1pt;
+    color: #4cacfa;
+    font-size: 0.9rem;
+}
+
+
+/* ---------- NAVIGATION ------------- */
+nav {
+    background-color: #007abd;
+    text-align: center;
+    box-shadow: 0 2px 15px gray;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: #fff;
+    background-color: rgb(14, 171, 243);
+}
+
+.active {
+    color: #fff;
+    background-color: rgb(14, 171, 243);
+}
+
+.responsive li {
+    display: block;
+}
+
+/* ---------- MAIN -------------  */
+main {
+    max-width: 950px;
+    margin: auto;    
+    padding-top: 1rem;
+}
+
+.soda-springs {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: lighter;
+}
+
+/*-------- WEATHER SUMMARY ---------*/
+
+.first-part {
+    position: relative;
+    margin: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    background-color: rgba(4, 101, 212, 0.356);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.weather-summary h3 {
+    font-size: 1em;
+    margin: 0;
+    color: #fff;
+}
+
+.ws-content {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 0 0.5rem;
+    margin: 0;
+    border-top: .5px solid #fff;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+.ws-content div {
+    margin: 0;
+    line-height: 1.1rem;
+}
+
+.col-1 {
+    display: grid;
+    justify-items: end;
+}
+
+/*  ---------------------------- 5 DAY FORECAST ------------------ */
+
+.second-part {
+    display: none;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.second-part h3 {
+    font-size: 1.7em;
+    text-align: center;
+    font-weight: lighter;
+    margin: 3%;
+}
+
+.forecast {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    background-color: rgb(238, 238, 238);
+}
+
+.forecast-icon {
+    max-width: 70px;
+    height: auto;
+    padding: 10px;
+}
+
+.forecast div {
+    display: grid;
+    max-width: 100%;
+    justify-items: center;
+}
+
+.forecast-day {
+    font-weight: bold;
+    padding: 0.2rem;
+    color: white;
+    background-color: rgb(143, 142, 142);
+}
+
+.forecast-temp {
+    padding-bottom: 0.3rem;
+}
+
+
+/*-------------------------------------- HR TAG -------------- --*/
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/*------- EVENTS --------*/
+div.events-section {
+    margin: 1rem 1rem 3rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+div.events-section h3 {
+    font-size: 1.5em;
+    padding: 0.7rem 0.5rem 0.4rem;
+    margin: -0.5rem 0 0.5rem 0;
+    color:#007abd;
+}
+
+/*------- FEATURE --------*/
+div.feature {
+    margin: .5rem .5rem -2rem .5rem;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 100%;
+    line-height: 1.4rem;
+}
+
+.article-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+
+.article-author {
+    font-style: italic;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+.article-link {
+    text-decoration: none;
+    color: blue;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+/*-------------------------------------- CONTACT INFORMATION -------------- --*/
+
+.fourth-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0;
+}
+
+.contact-img {
+    display: none;
+    margin: 1em;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+address {
+    font-style: normal;
+}
+
+address a {
+    color: #fff;
+    font-size: 0.5em;
+}
+
+.fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+/*------------------------------  Footer ------------------------------------- */
+
+footer {
+    background-color: #212529;
+    color: #6d7e97;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    line-height: 1.3rem;
+}
+
+footer a:link {
+    color: rgb(14, 171, 243);
+    text-decoration: none;
+}

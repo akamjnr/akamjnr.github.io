@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Soda Springs">
+        <meta name="article-author" content="Anyway Kambeva">
+        
+        <link rel="stylesheet" href="sodasprings/css/normalize.css">
+        <link rel="stylesheet" href="sodasprings/css/small.css">
+        <link rel="stylesheet" href="sodasprings/css/medium.css">
+        <link rel="stylesheet" href="sodasprings/css/large.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Idaho Weather Forecast: Soda Springs</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>   
+        
+<!-- HEADER -->
+        <header>
+            <picture>
+                <img src="sodasprings/images/iwf-logo.png" alt="IWF logo">
+            </picture>
+
+            <div class="logo-name">
+                <h1>Idaho Weather Forecast</h1>
+                <div class="motto">Acurate - Reliable - Always</div>
+            </div>
+        </header>
+
+<!-- NAVIGATION -->
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#x2630;Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li><a href="sodasprings.html" class="active">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+
+<!-- MAIN  -->
+            <main>                
+                    <h2 class="soda-springs">Soda Springs</h2>
+
+                    <div class="first-part">
+                        <div class="hero-image">
+                          <img src="sodasprings/images/hero.jpg" alt="beautiful flower">
+                        </div>
+
+                        <section class="weather-summary">
+                          <h3>Weather Summary</h3>
+
+                          <div class="ws-content">
+                            <div class="col-1">Currently:</div>
+                            <div id="curr-condi"></div>
+                            <div class="col-1">Temperature:</div>
+                            <div><span id="curr-temp"></span>&deg;F</div>
+                            <div class="col-1">Wind Chill:</div>
+                            <div id="wind-chi"><span id="wind-chill"></span>&deg;F</div>
+                            <div class="col-1">Humidity:</div>
+                            <div><span id="humidity"></span>%</div>
+                            <div class="col-1">Wind Speed:</div>
+                            <div><span id="wind-speed"></span>mph</div>
+                          </div>
+
+                        </section>
+                    </div>
+
+<!-- BR TAG --><br>
+
+<!-- 5 DAY FORECAST -->
+                <div class="second-part">
+                    <h3>Five Day Forecast</h3>
+
+                    <div class="forecast">
+                        <div class="forecast-day" id="day1"></div>
+                        <div class="forecast-day" id="day2"></div>
+                        <div class="forecast-day" id="day3"></div>
+                        <div class="forecast-day" id="day4"></div>
+                        <div class="forecast-day" id="day5"></div>
+
+                        <div class="forecast-icon">
+                            <img id="icon1" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon2" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon3" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon4" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon5" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-temp" id="temp1">&deg;F</div>
+                        <div class="forecast-temp" id="temp2">&deg;F</div>
+                        <div class="forecast-temp" id="temp3">&deg;F</div>
+                        <div class="forecast-temp" id="temp4">&deg;F</div>
+                        <div class="forecast-temp" id="temp5">&deg;F</div>
+                    </div>
+                </div>
+<br>
+<!-- HR TAG --> 
+<hr>
+<br><br>
+
+                <div class="events-section">
+                  <h3>Soda Springs Upcoming Events</h3>
+                  <div class="events">
+                  </div>
+                </div>
+                <br>
+
+                <hr>
+                <br>
+
+<!-- ARTICLE -->
+                <div class="feature">
+                    <img class="article-img" src="sodasprings/images/snow-steps.jpg" alt="wooden steps covered in snow">
+                    <h3 class="article-title">"If you don't smile, you cry"</h3>
+                    <h4 class="article-author">Author: Daniela Pardo</h4>
+                    <p>SODA SPRINGS, Calif. — Back-to-back storms in the Sierra are starting to take a toll on residents who 
+                        thought they were done with the snow this season. "We thought this was it. We had some lovely weather 
+                        up here," said Soda Springs resident Leanne Grimmer. Tuesday's winter weather kept Grimmer busy as 
+                        she plowed her driveway and removed the snow from her home.
+                        "You know if you don't smile, you cry," Grimmer said.<a class="article-link" href="https://www.abc10.com/article/weather/if-you-dont-smile-you-cry-soda-springs-residents-react-to-spring-snow/103-545ff5a7-b201-49e9-9187-baaff84028a5" target="_blank">
+                            Read more...</a></p>
+                </div>
+                <br>
+                <br>
+                <hr>
+
+<!-- CONTACT INFORMATION -->
+                <div class="fourth-part">
+                    <a class="contact-img" target="_blank" href="https://www.google.com/maps/@42.1032243,-111.8698475,12.92z?hl=en">
+                    <img src="sodasprings/images/preston-map.JPG" alt="Soda Springs--------------------------------------------------- Map"></a>
+                    <div class="contact-box">
+                        <div class="contact">
+                            <address>
+                              <strong>Idaho Weather Forecast</strong><br>
+                               1122 Downtown South<br>
+                               Preston, ID 001122<br><br>&#9742;
+                               333.444.5555<br>&#9993; info@iwf.com<br><br>
+                              <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                              <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+                              <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+
+<!-- FOOTER -->
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> Idaho Weather Forecast | Anyway Kambeva | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning | </a>Weather Data by: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a><br><span id="currentday"></span></p>
+            </footer>
+
+            <script src="sodasprings/js/sodasprings.js"></script>
+        
+    </body>
+
+</html>

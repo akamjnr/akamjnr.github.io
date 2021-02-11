@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <meta name="description" content="WDD-230 Web Frontend Development I. Idaho Weather Forecast: Preston">
+        <meta name="article-author" content="Anyway Kambeva">
+        
+        <link rel="stylesheet" href="preston/css/normalize.css">
+        <link rel="stylesheet" href="preston/css/small.css">
+        <link rel="stylesheet" href="preston/css/medium.css">
+        <link rel="stylesheet" href="preston/css/large.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Idaho Weather Forecast: Preston</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body onload="showBanner()">
+        <aside class="show-banner hide-banner">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+        </aside>   
+        
+<!-- HEADER -->
+        <header>
+            <picture>
+                <img src="preston/images/iwf-logo.png" alt="IWF logo">
+            </picture>
+
+            <div class="logo-name">
+                <h1>Idaho Weather Forecast</h1>
+                <div class="motto">Acurate - Reliable - Always</div>
+            </div>
+        </header>
+
+<!-- NAVIGATION -->
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()">&#x2630;Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston.html" class="active">Preston</a></li>
+                    <li><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+
+
+<!-- MAIN  -->
+            <main>                
+                    <h2 class="preston-idaho">Preston Idaho</h2>
+
+                    <div class="first-part">
+                        <div class="hero-image">
+                          <img src="preston/images/placeholder.jpg" alt="beautiful flowers">
+                        </div>
+
+                        <section class="weather-summary">
+                          <h3>Weather Summary</h3>
+
+                          <div class="ws-content">
+                            <div class="col-1">Currently:</div>
+                            <div id="curr-condi"></div>
+                            <div class="col-1">Temperature:</div>
+                            <div><span id="curr-temp"></span>&deg;F</div>
+                            <div class="col-1">Wind Chill:</div>
+                            <div id="wind-chi"><span id="wind-chill"></span>&deg;F</div>
+                            <div class="col-1">Humidity:</div>
+                            <div><span id="humidity"></span>%</div>
+                            <div class="col-1">Wind Speed:</div>
+                            <div><span id="wind-speed"></span>mph</div>
+                          </div>
+
+                        </section>
+                    </div>
+
+<!-- BR TAG --><br>
+
+<!-- 5 DAY FORECAST -->
+                <div class="second-part">
+                    <h3>Five Day Forecast</h3>
+
+                    <div class="forecast">
+                        <div class="forecast-day" id="day1"></div>
+                        <div class="forecast-day" id="day2"></div>
+                        <div class="forecast-day" id="day3"></div>
+                        <div class="forecast-day" id="day4"></div>
+                        <div class="forecast-day" id="day5"></div>
+
+                        <div class="forecast-icon">
+                            <img id="icon1" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon2" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon3" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon4" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-icon">
+                            <img id="icon5" src="#" alt="weather-icon">
+                        </div>
+
+                        <div class="forecast-temp" id="temp1">&deg;F</div>
+                        <div class="forecast-temp" id="temp2">&deg;F</div>
+                        <div class="forecast-temp" id="temp3">&deg;F</div>
+                        <div class="forecast-temp" id="temp4">&deg;F</div>
+                        <div class="forecast-temp" id="temp5">&deg;F</div>
+                    </div>
+                </div>
+<br>
+<!-- HR TAG --> 
+<hr>
+<br><br>
+
+                <div class="events-section">
+                  <h3>Preston Upcoming Events</h3>
+                  <div class="events">
+                  </div>
+                </div>
+
+                <br>
+                <hr>
+                <br>
+
+<!-- ARTICLE -->
+                <div class="feature">
+                    <img class="article-img" src="preston/images/nature-beautiful.jpg" alt="beautiful landscape">
+                    <h3 class="article-title">Preston residents look back on "Napoleon Dynamite"</h3>
+                    <h4 class="article-author">Author: Clayton Gefre Herald Journal</h4>
+                    <p>Twelve years ago, Preston was a town like any other, a relatively quiet part of southern Idaho 
+                        with a population of just under 5,000 people. Known for That Famous Preston Night Rodeo and its 
+                        close proximity to the site of the Bear River Massacre, most of the United States would likely 
+                        have been unable to locate it on a map. Things would change for the small Franklin County town 
+                        with the release of "Napoleon Dynamite" in 2004. <a class="article-link" href="https://archive.sltrib.com/article.php?id=4022003&itype=CMSID" target="_blank">
+                            Read more...</a></p>
+                </div>
+                <br>
+                <br>
+                <hr>
+                <br>
+
+<!-- CONTACT INFORMATION -->
+                <div class="fourth-part">
+                    <a class="contact-img" target="_blank" href="https://www.google.com/maps/@42.1032243,-111.8698475,12.92z?hl=en">
+                    <img src="preston/images/preston-map.JPG" alt="Preston Idaho Map"></a>
+                    <div class="contact-box">
+                        <div class="contact">
+                            <address>
+                              <strong>Idaho Weather Forecast</strong><br>
+                               1122 Downtown South<br>
+                               Preston, ID 001122<br><br>&#9742;
+                               333.444.5555<br>&#9993; info@iwf.com<br><br>
+                              <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook" aria-hidden="true"></a>
+                              <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter" aria-hidden="true"></a>
+                              <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram" aria-hidden="true"></a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+
+<!-- FOOTER -->
+            <footer>
+                <p> &copy; <span id="currentyear"> </span> Idaho Weather Forecast | Anyway Kambeva | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning | </a>Weather Data by: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a><br><span id="currentday"></span></p>
+            </footer>
+
+            <script src="preston/js/preston.js"></script>
+        
+    </body>
+
+</html>

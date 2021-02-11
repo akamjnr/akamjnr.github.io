@@ -1,0 +1,179 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 40em) {
+
+    /* -------------------------------- HEADER ----------------------------- */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    header img {
+        width: auto;
+        height: 130px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+        font-weight: lighter;
+        padding: 0;
+        margin: 0;
+    }
+
+    .motto {
+        font-size: 1.1rem;
+        margin-top: 10px;
+    }
+
+    /*------------------------------ NAVIGATION ---------------------- */
+
+    nav {
+        max-width: 100%;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        display: block;
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    nav a:hover {
+        height: auto;
+    }
+
+    button {
+        display: none;
+    }
+
+    /* ---------------------------- MAIN -----------------------------  */
+    .article-title {
+        font-size: 1.7rem;
+    }
+
+    .fish-haven {
+        font-size: 2.4rem;
+        font-weight: lighter;
+    }
+
+    /* ------------------------------- WEATHER SUMMARY  -------------------- */
+
+    .hero-image img {
+        width: 100%;
+        margin: 0;
+    }
+
+    .weather-summary {
+        padding: 1.25rem;
+    }
+
+    .weather-summary h3 {
+        font-size: 1.25em;
+    }
+
+    .ws-content {
+        font-size: 1em;
+    }
+
+    .ws-content div {
+        line-height: 1.5rem;
+    }
+
+    /* ------------------------------- 5 DAY FORECAST -------------------- */
+
+    .second-part {
+        display: block;
+        max-width: 100%;
+    }
+
+    .second-part h3 {
+        font-size: 2.3em;
+        text-align: center;
+        font-weight: lighter;
+        margin: 3%;
+        padding-bottom: 8px;
+    }
+
+    .forecast img {
+        max-width: 50px;
+        height: auto;
+        padding: 10px;
+    }
+
+    /* ------ EVENTS ------ */
+    div.events-section {
+        padding: 2rem;
+      }
+   
+    /* ------ FEATURE ------ */
+    div.feature {
+        max-width: 100%;
+        margin: 2.7rem 5rem -.5rem .5rem;
+        padding: 1rem 1rem 0 1rem;
+        line-height: 1.5rem;
+    }
+
+    .article-img {
+        float: right;
+        margin: 0 -4rem 0 1.3rem;
+        width: 45%;
+    }
+
+    .article-title {
+        margin-top: 0;
+        font-size: 1.9rem;
+        line-height: 2rem;
+    }
+
+
+    /*-------------------------------------- CONTACT INFORMATION -------------- --*/
+
+    .contact-img {
+        display: flex;
+        padding-right: 20px;
+    }
+
+    .contact-box {
+        width: auto;
+    }
+
+    address {
+        font-size: 1em;
+        padding-right: 55px;
+    }
+
+    address a {
+        font-size: 0.7em;
+    }
+
+    /* -------------------------------- FOOTER ----------------------------- */
+
+    footer {
+        background-color: #212529;
+        color: #6d7e97;
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 15px;
+    }
+
+    footer a:link {
+        color: rgb(14, 171, 243);
+        text-decoration: none;
+    }
+
+}
