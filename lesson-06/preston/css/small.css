@@ -18,7 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.hide-banner {
+#hide-banner {
     display: none;
 }
 
@@ -296,6 +296,7 @@ div.feature {
 .contact-img img {
     width: 100%;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .contact-box {
@@ -314,32 +315,15 @@ address a {
     font-size: 0.5em;
 }
 
-.fa {
+.social {
     padding: 2px;
-    font-size: 30px;
     width: 30px;
-    text-align: center;
-    text-decoration: none;
-  }
+}
 
-  .fa:hover {
+.social:hover {
     opacity: 0.7;
-  }
+}
 
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
 /*------------------------------  Footer ------------------------------------- */
 
 footer {
