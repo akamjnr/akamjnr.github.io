@@ -17,7 +17,7 @@ body {
     min-height: 100%;
     font-family: 'Noto Sans', sans-serif;
     font-size: 13px;
-    line-height: 2rem;
+    line-height: 1.7rem;
     margin: 0;
     overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
     color: #1f1f1f;
-    line-height: 2.5rem;
+    line-height: 2.3rem;
 }
 
 /*---  HEADER / NAVIGATION ---*/
