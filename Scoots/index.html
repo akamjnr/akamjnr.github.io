@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots: motor scooter rental company located on the island of Cozumel in Mexico">
+    <meta name="article-author" content="Anyway Kambeva">
+    <link rel="shortcut icon" href="images/scoots-fav.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+
+    <title>Scoots | Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <a href="index.html"><img src="images/scoots-logo.png" alt="scoots logo"></a>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li>
+                    <div class="container" onclick="toggleMenu()" id="menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>               
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>                
+            </ul>
+        </nav>
+        <div class="drop-down">
+            <a href="index.html" class="active">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="tours.html">Tours</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-heading">NEED A RIDE?</div>
+                <div class="sub-heading">WE'RE THE BEST RENTAL SERVICE IN COZUMEL</div>
+                <a class="call-to-action button" href="reservations.html">Make Reservation</a>
+            </div>
+        </section>
+
+        <div class="rental-type"><h2>Types of Rentals</h2></div> 
+            
+
+        <div class="card-container">                   
+
+            <div class="card">
+                <div class="img"><img src="images/honda-metro.jpg" alt="honda metropolitan 49cc"></div>
+                <div class="top-text">
+                    <h3 class="car-name">Honda Metro- 49cc</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/honda-dio.jpg" alt="honda dio 110cc"></div>
+                <div class="top-text">
+                    <h3 class="car-name">Honda Dio 110cc</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/honda-pcx.jpg" alt="honda pcx150"></div>
+                <div class="top-text">
+                    <h3 class="car-name">Honda PCX150 149cc</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/honda-pioneer.jpg" alt="honda pioneer 1000"></div>
+                <div class="top-text">
+                    <h3 class="car-name">Honda Pioneer 1000</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/2-door-jeep.jpg" alt="2 door jeep wrangler"></div>
+                <div class="top-text">
+                    <h3 class="car-name">2-door Jeep Wrangler</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="images/4-door-jeep.jpg" alt="4 door jeep wrangler"></div>
+                <div class="top-text">
+                    <h3 class="car-name">4-door Jeep Wrangler</h3>
+                </div>
+            </div>
+
+        </div>
+
+        
+        <div class="weather"><h2>Current Weather</h2></div> 
+            
+
+        <div class="current-weather">
+
+            <section class="weather-summary">
+              <h3>Current Weather Summary</h3>
+
+              <div class="ws-content">
+                <div class="col-1">Currently:</div>
+                <div id="curr-condi"></div>
+                <div class="col-1">Temperature:</div>
+                <div><span id="curr-temp"></span>&deg;F</div>                
+                <div class="col-1">Humidity:</div>
+                <div><span id="humidity"></span>%</div>                
+              </div>
+            </section>
+
+            <div class="five-day-forecast">
+                <h3>Five Day Forecast</h3>
+                <div class="forecast">
+                    <div class="forecast-day hide-this" id="day1"></div>
+                    <div class="forecast-day hide-this" id="day2"></div>
+                    <div class="forecast-day hide-this" id="day3"></div>
+                    <div class="forecast-day hide-this" id="day4"></div>
+                    <div class="forecast-day" id="day5"></div>
+
+                    <div class="forecast-icon hide-this">
+                        <img id="icon1" src="#" alt="weather-icon">
+                    </div>
+
+                    <div class="forecast-icon hide-this">
+                        <img id="icon2" src="#" alt="weather-icon">
+                    </div>
+
+                    <div class="forecast-icon hide-this">
+                        <img id="icon3" src="#" alt="weather-icon">
+                    </div>
+
+                    <div class="forecast-icon hide-this">
+                        <img id="icon4" src="#" alt="weather-icon">
+                    </div>
+
+                    <div class="forecast-icon">
+                        <img id="icon5" src="#" alt="weather-icon">
+                    </div>
+
+                    <div class="forecast-temp hide-this" id="temp1">&deg;F</div>
+                    <div class="forecast-temp hide-this" id="temp2">&deg;F</div>
+                    <div class="forecast-temp hide-this" id="temp3">&deg;F</div>
+                    <div class="forecast-temp hide-this" id="temp4">&deg;F</div>
+                    <div class="forecast-temp" id="temp5">&deg;F</div>
+                </div>
+            </div>            
+        </div>
+
+
+    </main>
+
+    <div class="contact-box">
+        <h3 class="get-in-touch">Get in Touch</h3>
+        <div class="top-footer">
+            <div class="address">
+                <strong>Scoots</strong><br>
+                Playa del Carmen-Cozumel<br>Terminal Puerta Maya<br>
+            52457 Cozumel, Mexico.
+            </div>        
+
+            <div class="phone-email">
+                <p>&#9742; +052 987 XXXX.</p>
+                <p>&#9993; info@scoots.com</p>
+            </div>
+
+            <div class="social-icons">
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="social" alt="facebook icon"></a><span></span>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="social" alt="twitter icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" class="social" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> &copy; <span id="currentyear"> </span> Scoots | Anyway Kambeva | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a> | Weather Data by: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> | <br><br>Some images sourced: <a href="https://www.honda-mideast.com/en/" target="_blank">Honda Mideast</a> | Last Updated: <span id="update"></span></p>
+            
+    </footer>
+
+    <script src="js/scoots.js"></script>
+
+</body>
+
+</html>

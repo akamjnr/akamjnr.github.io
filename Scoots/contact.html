@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots: motor scooter rental company located on the island of Cozumel in Mexico">
+    <meta name="article-author" content="Anyway Kambeva">
+    <link rel="shortcut icon" href="images/scoots-fav.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+
+    <title>Scoots | Contact</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <a href="index.html"><img src="images/scoots-logo.png" alt="scoots logo"></a>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li>
+                    <div class="container" onclick="toggleMenu()" id="menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>               
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>                
+            </ul>
+        </nav>
+        <div class="drop-down">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="tours.html">Tours</a>
+            <a href="contact.html" class="active">Contact</a>
+          </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-heading">NEED MORE INFO?</div>
+                <div class="sub-heading">GET IN TOUCH WITH US</div>
+                <a class="call-to-action button" href="#contact-us">Get in touch</a>
+            </div>
+        </section>       
+
+    <div class="rental-details">
+        <h2 id="contact-us">Contact</h2>
+        <p class="center large">Please complete the form below.</p>
+
+        <div class="terms-cond">
+            <button class="accordion">CLICK ME to see our location on Google Maps</button>
+            <div class="panel">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239070.50982278676!2d-87.03811172862353!3d20.568580723364978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sza!4v1613793856555!5m2!1sen!2sza" width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Scoots is located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea. 
+                        We have two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry 
+                        dock in el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along 
+                        the coast which caters to the cruise lines and patrons. We promote friendly and easy to rent services
+                         of motor scooters, Jeeps, and side-by-sides ATVs.
+                    </p>
+            </div>
+        </div>
+
+        <form method="get" action="contact-submitted.html">
+
+            <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label class="top"><b>Full Name</b><span class="ast">*</span> <input type="text" name="name" placeholder="Full Name" pattern="[a-zA-Z\s]{5,}" required></label>                      
+            <label class="top"><b>Email</b><span class="ast">*</span> <input type="email" name="email" placeholder="email@address.com" required></label>
+            <label class="top"><b>Phone Number</b><input type="tel" name="phone" placeholder="1234567801"></label>
+            <label class="top"><b>Comments</b> <textarea name="comments" placeholder="your comments here" rows="4"></textarea></label>
+            </fieldset>
+
+            <div class="button-div">
+            <input type="submit" value="Submit Reservation" class="submitBtn">
+            </div>            
+
+        </form>
+
+    </div>       
+
+
+    </main>
+
+    <div class="contact-box">
+        <h3 class="get-in-touch">Get in Touch</h3>
+        <div class="top-footer">
+            <div class="address">
+                <strong>Scoots</strong><br>
+                Playa del Carmen-Cozumel<br>Terminal Puerta Maya<br>
+            52457 Cozumel, Mexico.
+            </div>        
+
+            <div class="phone-email">
+                <p>&#9742; +052 987 XXXX.</p>
+                <p>&#9993; info@scoots.com</p>
+            </div>
+
+            <div class="social-icons">
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="social" alt="facebook icon"></a><span></span>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="social" alt="twitter icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" class="social" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> &copy; <span id="currentyear"> </span> Scoots | Anyway Kambeva | <a href="https://www.byui.edu/online"
+                target="_blank"> BYU-Idaho Online Learning</a><br><br>Last Updated: <span id="update"></span></p>            
+    </footer>
+
+    <script src="js/scoots.js"></script>
+    <script src="js/rentals.js"></script>
+
+</body>
+
+</html>

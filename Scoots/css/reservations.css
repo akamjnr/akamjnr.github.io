@@ -1,0 +1,206 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section.hero {
+    background-image: url(../images/scooter-honda.jpg);
+    background-color: #216342;
+}
+
+.button {
+    background-color: #028d15; 
+    border-color: #028d15;   
+    color: #fff !important;
+}
+
+.button:hover {
+    border-color: #fb5012;
+    background-color: #fb5012;
+}
+
+
+
+.rental-details {
+    max-width: 950px;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: left;
+    padding: 40px 0 0 35px;
+    margin: 0;
+    color: #216342;
+}
+
+p.center {
+    text-align: left;
+    padding: 5px 10px 10px 36px;
+    font-size: 1.5em;
+    color:rgba(0, 0, 0, 0.685)
+}
+
+
+div.vspace {
+    height: 36px;
+}
+
+.ast {
+    color: red;
+}
+
+form fieldset {
+    margin: 2rem 2%;
+    padding: 0 4% 2rem 4%;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
+    border-width: 0;
+}
+
+form legend {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    color: #292828d7;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: 0.75rem;
+    color: #555;
+    width: 89%;
+    max-width: 20rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form label input:focus,
+form label select:focus,
+form label textarea:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px rgba(20, 61, 243, 0.87);
+}
+
+form label.sbs {
+    display: block;
+    padding: 0.3rem;
+}
+
+form label.top input:required {
+    border-left: rgb(255, 51, 0) solid 4px;
+}
+
+form label.top input:required:valid {
+    border-left: rgb(4, 202, 4) solid 4px;
+}
+
+
+
+/*--------- submit button -------- --*/
+
+form label.top select.period {
+    width: 98%;
+    max-width: 21.5rem;
+}
+
+form div.divlabel {
+    padding-top: 1rem;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #028d15;
+    color: white;
+    border-radius: 7px;
+    padding: 0.5rem;
+    margin: 0 0 2rem 0;
+    width: 100%;
+    max-width: 13rem;
+    height: 2.7rem;
+    font-size: 1.2rem;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #fb5012;
+  }
+
+  form div.button-div {
+    margin: 0 0 2rem 2%;
+  }
+
+  /*---- Accordion panel -----------------------*/
+div.terms-cond {
+    max-width: 950px;
+    margin: 2rem 2%;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #fb5012;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 15px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
+  }
+
+/* Background color to the button if it is clicked on, and when you move the mouse over it (hover) */
+.accordion:hover {
+    background-color: rgb(187, 184, 184);
+  }
+
+  .accordion.active, .accordion:hover {
+    background-color: rgb(224, 222, 222);
+  }
+
+  /* Style accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: rgba(241, 238, 238, 0.5);
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #555;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #028d15;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .accordion.active:after {
+    content: "\2212";
+    font-size: 15px;
+  }
+
+
+  
+
+@media only screen and (min-width: 40em) {
+
+    section.hero .hero-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+}

@@ -1,0 +1,133 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section.hero {
+    background-image: url(../images/contact-us.jpg);
+    background-color: #216342;
+}
+
+section.hero .hero-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.7rem;
+}
+
+.button {
+    background-color: #028d15; 
+    border-color: #028d15;   
+    color: #fff !important;
+}
+
+.button:hover {
+    border-color: #fb5012;
+    background-color: #fb5012;
+}
+
+
+.rental-details {
+    max-width: 950px;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: left;
+    padding: 40px 0 0 35px;
+    margin: 0;
+    color: #216342;
+}
+
+p.center {
+    text-align: left;
+    padding: 5px 10px 10px 36px;
+    font-size: 1.5em;
+    color:rgba(0, 0, 0, 0.685)
+}
+
+/* Accordion panel.*/
+
+.accordion {
+    background-color: #028d15c7;
+    color: #fff;
+  }
+
+/* Background color to the button if it is clicked on, and when you move the mouse over it (hover) */
+.accordion:hover {
+    background-color: #028d15;
+  }
+
+  .accordion.active, .accordion:hover {
+    background-color: #028d15;
+  }
+
+  /* Style accordion panel. Note: hidden by default */
+.panel {
+    padding: 0;
+    background-color: rgba(241, 238, 238, 0.808);
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
+    color: rgb(65, 63, 63);
+  }
+
+  .panel p {
+    padding: 0 18px;
+  }
+
+iframe {
+    width: 915px;
+} 
+
+.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .accordion.active:after {
+    content: "\2212";
+    font-size: 15px;
+  }
+
+
+@media only screen and (max-width: 44em) {
+
+    
+    section.hero .hero-heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.7rem;
+    }
+
+    .call-to-action {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p.center {        
+        font-size: 1.3em;
+    }
+
+}
+
+@media only screen and (min-width: 45em) {
+    section.hero .hero-heading {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }   
+    
+    .call-to-action {
+        font-size: 1.4em;
+    }
+
+}
+

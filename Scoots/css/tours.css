@@ -1,0 +1,67 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section.hero {
+    background-image: url(../images/hero-tours.jpg);
+    background-color: #216342;
+}
+
+.button {
+    background-color: #028d15; 
+    border-color: #028d15;   
+    color: #fff !important;
+}
+
+.button:hover {
+    border-color: #fb5012;
+    background-color: #fb5012;
+}
+
+.rental-details {
+    max-width: 950px;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: auto;
+    max-width: 950px;
+}
+
+h2 {
+    font-size: 2.3rem;
+    text-align: left;
+    padding: 40px 0 0 35px;
+    margin: 0;
+    color: #216342;
+}
+
+p.center {
+    text-align: left;
+    padding: 5px 10px 10px 36px;
+    font-size: 1.5em;
+    color:rgba(0, 0, 0, 0.685)
+}
+
+@media only screen and (min-width: 40em) {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

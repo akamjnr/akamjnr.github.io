@@ -1,0 +1,57 @@
+.rental-table {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 30px auto 40px;
+}
+
+
+
+table,
+th,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 3px;
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+table {
+    margin: 0;
+}
+
+thead tr {
+    background-color: rgba(241, 238, 238, 0.5);
+    color: rgb(92, 92, 91);
+}
+
+tbody tr th {
+    background-color: rgb(240, 239, 238);
+}
+
+tr {
+    background-color: rgb(230, 228, 225);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(248, 244, 244, 0.5);
+}
+
+tr th {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+thead tr th {
+    font-size: 32px;
+    line-height: 1.25;
+    padding: 15px;
+}
+
+tfoot td {
+    height: 85px;
+}
+
+
+

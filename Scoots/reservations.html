@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots: motor scooter rental company located on the island of Cozumel in Mexico">
+    <meta name="article-author" content="Anyway Kambeva">
+    <link rel="shortcut icon" href="images/scoots-fav.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/reservations.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+
+    <title>Scoots | Reservations</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <a href="index.html"><img src="images/scoots-logo.png" alt="scoots logo"></a>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li>
+                    <div class="container" onclick="toggleMenu()" id="menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>               
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html" class="active">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>                
+            </ul>
+        </nav>
+        <div class="drop-down">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html" class="active">Reservations</a>
+            <a href="tours.html">Tours</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-heading">NEED A RIDE?</div>
+                <div class="sub-heading">YOU'VE COME TO THE RIGHT PLACE.</div>
+                <a class="call-to-action button" href="#make-reserv">Make Reservation</a>
+            </div>
+        </section>       
+
+    <div class="rental-details">
+        <h2 id="make-reserv">Reservations</h2>
+        <p class="center large">Please complete the form below.</p>
+
+        <div class="terms-cond">
+            <button class="accordion">Terms and Conditions</button>
+            <div class="panel">
+                <p>The company rents to the renter, who hires the vehicle subject to the terms and conditions as set out herein. 
+                    The renter will be bound by these terms and conditions, whether he was driving or not.</p>
+                <ol>                    
+                    <li>Delivery of the vehicle takes place at the time the renter and/or driver and/or his representative takes 
+                        possession of the keys and/or vehicle at the renting location.</li>
+                    <li>The vehicle shall be deemed to have been delivered in good order and repair and without any damage to inter alia 
+                        the paintwork, upholstery and accessories (unless such damage is recorded in writing and signed by both parties under vehicle condition in the rental agreement or the rental vehicle condition report). Any damage not so recorded will be for the account of the renter.</li>
+                    <li>The vehicle may only be utilised for the rental period or any extended period.</li>
+                    <li>The renter and/or driver agree that any extension so noted on the company’s records would correctly reflect such extended period.</li>
+                    <li>The vehicle may only be driven by the driver or the additional driver.</li>
+                    <li>The renter and /or driver will ensure that the keys of the vehicle are under the renter’s and /or driver’s control at all times.</li>
+                    <li>The company will at all times remain the owner of the vehicle.</li>
+                    <li>The vehicle shall be returned undamaged, in good order and in roadworthy condition, fair wear and tear excepted.</li>
+                    <li>Should the vehicle not be returned as indicated, the vehicle may be reported as stolen to the relevant authorities.</li>
+                    <li>The renter will not be allowed to set-off or withhold payment of any amounts due in terms of this agreement for any reason whatsoever.</li>
+                    <li>The renter remains liable for payment of all amounts due until the company is paid in full by the issuer of the card.</li>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at time of rental.</li>
+                    <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                    <li>Fuel charge not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is free of charge.</li>
+                    <li>Reservations rate requires 24 hour prior notification.</li>
+                    <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                    <li>Rentals may be returned to either location.</li>
+                </ol>
+            
+            
+            </div>
+        </div>
+
+        <form method="get" action="reserve-confirmation.html">
+
+            <fieldset>
+            <legend><b>Personal Information</b></legend>
+            <label class="top"><b>Full Name</b><span class="ast">*</span> <input type="text" name="name" placeholder="Full Name" pattern="[a-zA-Z\s]{5,}" required></label>                      
+            <label class="top"><b>Email</b><span class="ast">*</span> <input type="email" name="email" placeholder="email@address.com" required></label>
+            <label class="top"><b>Phone Number</b><span class="ast">*</span> <input type="tel" name="phone" placeholder="1234567801" required></label>
+            <label class="top"><b>Country</b><input type="text" name="country"></label>
+            <label class="top"><b>Cruise Line (If Applicable)</b><input id="cruiseLine" type="text"></label>
+            </fieldset>
+
+            <fieldset>
+            <legend><b>Rental Details</b></legend>
+            <label class="top"><b>Rental Date</b> <input type="date" name="date"></label>
+            <label class="top"><b>Rental Type</b>
+                <input list="vehicles" name="vehicletype" placeholder="Select Vehicle">
+                <datalist id="vehicles">
+                    <option value="" selected disabled hidden>Select Vehicle</option>
+                    <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                    <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                    <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                    <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                    <option value="Jeep Wrangler - 4 door with A/C">Jeep Wrangler - 4 door with A/C</option>
+                    <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                </datalist>
+            </label>
+
+            <label class="top"><b>Rental Period</b>
+                <select class="period" name="period">
+                <option value="" selected disabled hidden>Select Period</option>
+                <option value="half day">Half Day</option>
+                <option value="one day">One Day</option>
+                <option value="two days">Two Days</option>
+                <option value="three days">Three Days</option>
+                <option value="four days">Four Days</option>
+                <option value="five days">Five Days</option>
+                <option value="two days">Six Days</option>
+                <option value="three days">One Week</option>
+                </select>
+            </label>
+
+            <div class="divlabel"><b>Contact Preference</b></div>
+            <label class="sbs"><input type="radio" name="in-danger" value="yes"> Phone</label>
+            <label class="sbs"><input type="radio" name="in-danger" value="maybe"> Email</label>
+            </fieldset>
+
+            <fieldset>
+            <legend><b>Additional Information</b></legend>
+            <label class="top"><b>Comments</b> <textarea name="comments" placeholder="Do you have any special requests?" rows="7"></textarea></label>
+            </fieldset>
+
+            <div class="button-div">
+            <input type="submit" value="Submit Reservation" class="submitBtn">
+            </div>            
+
+        </form>
+
+    </div>
+
+        
+
+
+    </main>
+
+    <div class="contact-box">
+        <h3 class="get-in-touch">Get in Touch</h3>
+        <div class="top-footer">
+            <div class="address">
+                <strong>Scoots</strong><br>
+                Playa del Carmen-Cozumel<br>Terminal Puerta Maya<br>
+            52457 Cozumel, Mexico.
+            </div>        
+
+            <div class="phone-email">
+                <p>&#9742; +052 987 XXXX.</p>
+                <p>&#9993; info@scoots.com</p>
+            </div>
+
+            <div class="social-icons">
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="social" alt="facebook icon"></a><span></span>
+                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="social" alt="twitter icon"></a>
+                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" class="social" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> &copy; <span id="currentyear"> </span> Scoots | Anyway Kambeva | <a href="https://www.byui.edu/online"
+                target="_blank"> BYU-Idaho Online Learning</a><br><br>Last Updated: <span id="update"></span></p>
+    </footer>
+
+    <script src="js/scoots.js"></script>
+    <script src="js/rentals.js"></script>
+
+</body>
+
+</html>

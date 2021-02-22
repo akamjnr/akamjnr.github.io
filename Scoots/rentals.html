@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots: motor scooter rental company located on the island of Cozumel in Mexico">
+    <meta name="article-author" content="Anyway Kambeva">
+    <link rel="shortcut icon" href="images/scoots-fav.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/tours.css">
+    <link rel="stylesheet" href="css/rentals.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+
+    <title>Scoots | Rentals</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <a href="index.html"><img src="images/scoots-logo.png" alt="scoots logo"></a>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li>
+                    <div class="container" onclick="toggleMenu()" id="menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>               
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html" class="active">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>                
+            </ul>
+        </nav>
+        <div class="drop-down">
+            <a href="index.html">Home</a>
+            <a href="rentals.html" class="active">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="tours.html">Tours</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-heading">NEED A RIDE?</div>
+                <div class="sub-heading">YOU'VE COME TO THE RIGHT PLACE.</div>
+                <a class="call-to-action button" href="contact.html">Make Reservation</a>
+            </div>
+        </section>       
+
+        <div class="rental-details">
+            <h2 class="contact-us">Rentals</h2>
+            <p class="center large">Available rental options and prices.</p>
+
+
+            <div class="terms-cond">
+                <button class="accordion">CLICK HERE for Important Rental Information</button>
+                <div class="panel">
+                    <ol>
+                        <li>A $50 security deposit is required to confirm reservations.</li>
+                        <li>A valid drivers license is required in hand at time of rental.</li>
+                        <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                        <li>Fuel charge not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is free of charge.</li>
+                        <li>Reservations rate requires 24 hour prior notification.</li>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                        <li>Rentals may be returned to either location.</li>
+                    </ol>              
+                </div>
+            </div>
+
+
+            <div class="card-container">
+                
+                <div class="rent-infor">
+                    <table class='rental-table'>
+                        <thead>
+                            <tr>
+                                <th colspan="6">
+                                    Max Persons and Price Chart
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th colspan="2"></th>
+                                <th colspan="2">Reservations</th>
+                                <th colspan="2">Walk Ins</th>
+                            </tr>
+                            <tr>
+                                <th>Rental Type</th>
+                                <th>Max. Persons</th>
+                                <th>Half Day (3 hrs)</th>
+                                <th>Full Day</th>
+                                <th>Half Day (3 hrs)</th>
+                                <th>Full Day</th>
+                            </tr>
+                            <tr>
+                                <td><span id="met-name"></span>Honda Metro Scooter</td>
+                                <td><span id="met-max"></span>1</td>
+                                <td><span id="res-met-half"></span>20</td>
+                                <td><span id="res-met-full"></span>30</td>
+                                <td><span id="in-met-half"></span>25</td>
+                                <td><span id="in-met-full"></span>35</td>
+                            </tr>
+                            <tr>
+                                <td><span id="dio-name"></span>Honda Dio Scooter</td>
+                                <td><span id="dio-max"></span>2</td>
+                                <td><span id="res-dio-half"></span>30</td>
+                                <td><span id="res-dio-full"></span>40</td>
+                                <td><span id="in-dio-half"></span>35</td>
+                                <td><span id="in-dio-full"></span>45</td>
+                            </tr>
+                            <tr>
+                                <td><span id="pcx-name"></span>Honda PCX150 Scooter</td>
+                                <td><span id="pcx-max"></span>2</td>
+                                <td><span id="res-pcx-half"></span>40</td>
+                                <td><span id="res-pcx-full"></span>50</td>
+                                <td><span id="in-pcx-half"></span>45</td>
+                                <td><span id="in-pcx-full"></span>55</td>
+                            </tr>
+                            <tr>
+                                <td><span id="atv-name"></span>Honda Pioneer ATV</td>
+                                <td><span id="atv-max"></span>4</td>
+                                <td><span id="res-atv-half"></span>50</td>
+                                <td><span id="res-atv-full"></span>70</td>
+                                <td><span id="in-atv-half"></span>60</td>
+                                <td><span id="in-atv-full"></span>80</td>
+                            </tr>
+                            <tr>
+                                <td><span id="4door-name"></span>Jeep Wrangler - 4 door with a/c</td>
+                                <td><span id="4door-max"></span>5</td>
+                                <td><span id="res-4door-half"></span>70</td>
+                                <td><span id="res-4door-full"></span>100</td>
+                                <td><span id="in-4door-half"></span>85</td>
+                                <td><span id="in-4door-full"></span>125</td>
+                            </tr>
+                            <tr>
+                                <td><span id="2door-name"></span>Jeep Wrangler - 2 door</td>
+                                <td><span id="2door-max"></span>4</td>
+                                <td><span id="res-2door-half"></span>60</td>
+                                <td><span id="res-2door-full"></span>85</td>
+                                <td><span id="in-2door-half"></span>70</td>
+                                <td><span id="in-2door-full"></span>90</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                
+
+            </div>
+
+        </div>
+
+
+        <div class="rental-details">
+            <h2 class="contact-us">Types of Rentals</h2>
+            <p class="center large">Feel free to browse our available rental options.</p>
+
+            <div class="card-container">                   
+
+                <div class="card">
+                    <div class="img"><img src="images/honda-metro.jpg" alt="honda metropolitan 49cc"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Honda Metro- 49cc</h3>
+                        <p>European-style engineered to embody American practicality. Electric starter, 
+                            underseat storage to help you on the go. Turn short rides into a 
+                            metropolis of fun, save on gas.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="img"><img src="images/honda-dio.jpg" alt="honda dio 110cc"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Honda Dio 110cc</h3>
+                        <p>Powerful engine with optimum perfomance, superb mileage. Combined 
+                            braking system. Retractable hooks make
+                             it a breeze to carry anything and everything.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="img"><img src="images/honda-pcx.jpg" alt="honda pcx150"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Honda PCX150 149cc</h3>
+                        <p>V-Matic transmission, you get start-up-and-go riding without needing to shift. 
+                            2.1 gallon fuel tank, stellar fuel economy saves you money. Conquer your city 
+                            in style, on the sleek and swift.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="img"><img src="images/honda-pioneer.jpg" alt="honda pioneer 1000"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Honda Pioneer 1000</h3>
+                        <p>Smart technology. Superior materials. Refined engineering. Honda’s well-earned 
+                            and world-famous reputation for reliability and overall quality. Everybody 
+                            aboard is going to enjoy the ride.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="img"><img src="images/2-door-jeep.jpg" alt="2 door jeep wrangler"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">2-door Jeep Wrangler</h3>
+                        <p>Stronger axle tubes, larger brakes, 4x4 systems, rugged steel skid plates and 
+                            more all add up for you to take the most capable 2 door Jeep Wrangler 
+                            further than you ever thought possible.</p>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="img"><img src="images/4-door-jeep.jpg" alt="4 door jeep wrangler"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">4-door Jeep Wrangler</h3>
+                        <p>Smart design combined with advanced technological features for a safe and secure
+                            journey. Systems include ParkSense Front and Rear Park Assist to keep you aware
+                             of your surroundings.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+        <div class="contact-box">
+            <h3 class="get-in-touch">Get in Touch</h3>
+            <div class="top-footer">
+                <div class="address">
+                    <strong>Scoots</strong><br>
+                    Playa del Carmen-Cozumel<br>Terminal Puerta Maya<br>
+                52457 Cozumel, Mexico.
+                </div>        
+
+                <div class="phone-email">
+                    <p>&#9742; +052 987 XXXX.</p>
+                    <p>&#9993; info@scoots.com</p>
+                </div>
+
+                <div class="social-icons">
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="social" alt="facebook icon"></a><span></span>
+                        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="social" alt="twitter icon"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" class="social" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <p> &copy; <span id="currentyear"> </span> Scoots | Anyway Kambeva | <a href="https://www.byui.edu/online" target="_blank"> BYU-Idaho Online Learning</a> | Weather Data by: <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> | <br><br>Some images sourced: <a href="https://www.honda-mideast.com/en/" target="_blank">Honda Mideast</a> | Last Updated: <span id="update"></span></p>
+            
+    </footer>
+
+    <script src="js/scoots.js"></script>
+    <script src="js/vehicles.js"></script>
+
+</body>
+
+</html>

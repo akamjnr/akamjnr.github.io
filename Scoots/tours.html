@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scoots: motor scooter rental company located on the island of Cozumel in Mexico">
+    <meta name="article-author" content="Anyway Kambeva">
+    <link rel="shortcut icon" href="images/scoots-fav.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/reservations.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/tours.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Noto+Sans&display=swap"
+        rel="stylesheet">
+
+    <title>Scoots | Tours</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-box">
+            <a href="index.html"><img src="images/scoots-logo.png" alt="scoots logo"></a>
+        </div>
+        <nav>
+            <ul class="navigation"> 
+                <li>
+                    <div class="container" onclick="toggleMenu()" id="menu">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>               
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html" class="active">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>                
+            </ul>
+        </nav>
+        <div class="drop-down">
+            <a href="index.html">Home</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="tours.html" class="active">Tours</a>
+            <a href="contact.html">Contact</a>
+          </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-heading">NEED MORE INFO?</div>
+                <div class="sub-heading">GET IN TOUCH WITH US</div>
+                <a class="call-to-action button" href="contact.html">Get in touch</a>
+            </div>
+        </section>       
+
+        <div class="rental-details">
+            <h2 id="contact-us">Tours</h2>
+            <p class="center large">Here are some interesting sites to see in Cozumel</p>
+
+            <div class="card-container">                   
+
+                <div class="card">
+                    <div class="img"><img src="images/palancar-reef.jpg" alt="coral reef"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Palancar Reef</h3>
+                        <p>Palancar Reef is a large coral reef on the southwest side of the island of Cozumel 
+                            and is part of the Arrecifes de Cozumel National Park. The site, popular with scuba 
+                            divers, is divided into several sections based on depth and coral formations.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/cozumel-beach.jpg" alt="Cozumel's Beach"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Cozumel's Beaches</h3>
+                        <p>Among the most popular and attractive of Cozumel's beaches are Playa San Juan and Playa 
+                            Santa Pilar in the northwest corner of the island, and Playa San Francisco, Playa Santa 
+                            Rosa, and Playa Palancar to the southwest.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/san-miguel.jpg" alt="San Miguel de Cozumel"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">San Miguel de Cozumel</h3>
+                        <p>On the northwest side of Cozumel, San Miguel de Cozumel is the island's capital and 
+                            offers many interesting distractions. As a tourist hub, it's also a 
+                            busy port and hosts cruise ships as they ply the sparkling waters of the Caribbean Sea.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/laguna-chankanaab.jpg" alt="Laguna Chankanaab"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Laguna Chankanaab</h3>
+                        <p>A small freshwater south of San Miguel de Cozumel in the National Marine Park. 
+                            It's a popular spot for outings thanks to its crystal-clear water and numerous 
+                            colorful tropical fish, and is an enchanting place to swim, snorkel, and scuba dive.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/punta-sur.jpg" alt="Punta Sur Eco Beach Park"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Punta Sur Eco Beach</h3>
+                        <p>A fun place to explore diversity of Cozumel's coastline and experience its flora and 
+                            fauna. It is the largest eco park on the island with plenty of great swimming and 
+                            beach fun, some snorkeling, scuba diving, and kayaking.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/dolphins.jpg" alt="two dolphins"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Dolphin Experiences</h3>
+                        <p>Cozumel has a number of popular dolphin experiences. One of the best 
+                            is at Dolphinaris Cozumel, and offers an exciting program of dolphin swims. 
+                            Another is Dolphin Discovery Cozumel, situated in Chankanaab National Park</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/fish.jpg" alt="fish under water"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Atlantis Submarines</h3>
+                        <p>Experience a dive with Atlantis Submarines. During the dive, you will visit the Felipe 
+                            Xicotencatl wreck that sank in the year 2000 plus colourful schools of fish, sharks, 
+                            turtles, stingrays and lobsters.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/tacos.jpg" alt="tacos"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Eat at Local Restaurants</h3>
+                        <p>Eating street food is one of the best things to do in Cozumel and Mexican cuisine is a favourite.
+                            Think burritos, tacos, tortas, ceviche, enchiladas, churros. Eat like a local. 
+                            Even vegetarians are well catered.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img"><img src="images/deep-sea-fishing.jpg" alt="fishing rod"></div>
+                    <div class="top-text">
+                        <h3 class="car-name">Deep-Sea Fishing</h3>
+                        <p>For Deep-Sea Fishing enthusiasts, Cozumel is the perfect location, even if you’re not a hardcore 
+                            fisherman, it's still one of the best things to do. You can catch tuna all year round, 
+                            marlin and sailfish are available.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+        <div class="contact-box">
+            <h3 class="get-in-touch">Get in Touch</h3>
+            <div class="top-footer">
+                <div class="address">
+                    <strong>Scoots</strong><br>
+                    Playa del Carmen-Cozumel<br>Terminal Puerta Maya<br>
+                52457 Cozumel, Mexico.
+                </div>        
+
+                <div class="phone-email">
+                    <p>&#9742; +052 987 XXXX.</p>
+                    <p>&#9993; info@scoots.com</p>
+                </div>
+
+                <div class="social-icons">
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="social" alt="facebook icon"></a><span></span>
+                        <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" class="social" alt="twitter icon"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="images/instagram.png" class="social" alt="instagram icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <p> &copy; <span id="currentyear"> </span> Scoots | Anyway Kambeva | <a href="https://www.byui.edu/online"
+                target="_blank"> BYU-Idaho Online Learning</a><br><br>Last Updated: <span id="update"></span></p>
+    </footer>
+
+    <script src="js/scoots.js"></script>
+    <script src="js/rentals.js"></script>
+
+</body>
+
+</html>
