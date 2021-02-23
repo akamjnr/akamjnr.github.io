@@ -173,17 +173,12 @@ section.hero .hero-heading {
     display: block;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 3.5rem;
+    line-height: 2.7rem;
     margin-bottom: 20px;
 }
 
 section.hero .sub-heading {
-    display: block;
-    font-size: 1rem;
-    font-weight: lighter;
-    line-height: 1.7rem;
     max-width: 50%;
-    margin-bottom: 20px;
     padding: 0;
 }
 
@@ -294,7 +289,7 @@ hr {
 .weather-summary {
     position: relative;
     top: 2.5rem;
-    left: -7rem;
+    left: -3rem;
     padding: 1rem;
     max-width: 170px;
     height: 150px;
