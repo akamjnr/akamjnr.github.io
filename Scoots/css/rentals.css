@@ -12,7 +12,7 @@ td {
     border-collapse: collapse;
     text-align: center;
     padding: 3px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.25;
 }
 
@@ -44,7 +44,7 @@ tr th {
 }
 
 thead tr th {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.25;
     padding: 15px;
 }
